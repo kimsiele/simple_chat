@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>WeChat</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row chatheader">
+            <div class="col-md-8">
+                <h1> <i class="fas fa-microphone"></i> WeChat</h1>
+            </div>
+            <div class="col-md-4">
+                <button id="btn_leave" class="btn-leave">Leave Room</button>
+            </div>
+
+        </div>
+        <div class="row users-room">
+            <div class="col-md-3">
+                <h4 class="mb-2 mt-4">Room name</h4>
+                <h6 id="room-name" class="mb-4 my-room"> </h6>
+                <h4 class="mb-2"><i class="fas fa-users"></i> Users</h4>
+                <ul id="users">
+                </ul>
+
+            </div>
+            <div class="col-md-9 chat-messages">
+            </div>
+
+            <div class="row message-form">
+                <div class="col">
+                    <form class="m-auto" action="" id="chat_form">
+                        <label for="message"></label>
+                        <input type="text" name="message" id="msg" required placeholder="Enter message">
+                        <button type="submit" class="btn-send">SEND</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js" integrity="sha512-f0AM6x08kthGzMyDHZjBgjBCPp8V8ovlHYCI1jMkhViTeX3MykGCf/DnN1khWss/6d1105eAG4TniSKy6UhZrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

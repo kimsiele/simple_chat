@@ -1,0 +1,41 @@
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 50px;
+    background-color: cornflowerblue;
+}
+
+button:focus,
+input:focus,
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+h1.text-center {
+    color: #fff;
+    text-align: center;
+}
+
+.join-header {
+    background-color: rgb(8, 106, 197);
+    margin-top: 5px;
+    padding: 5px;
+    margin-left: -11px;
+    margin-right: -11px;
+}
+
+label {
+    color: #fff;
+}
+
+.btn-join {
+    margin: auto;
+    margin-right: 0px;
+    width: inherit;
+    border-radius: 20px 0px 0px 20px;
+    padding: 8px 70px;
+    background-color: azure;
+    color: black;
+}
